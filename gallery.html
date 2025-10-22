@@ -3,78 +3,105 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Gallery | IV Clean - Carpet & Tile Cleaning in Lakewood Ranch, FL</title>
-
-
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEW1LV0Z29"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-XEW1LV0Z29');
+    gtag('js', new Date()); gtag('config', 'G-XEW1LV0Z29');
   </script>
 
-  <!-- SEO Meta Tags -->
-  <meta name="description"
-    content="Explore our before & after gallery of expert carpet, tile, grout, upholstery and floor cleaning services in Lakewood Ranch, FL." />
-  <meta name="keywords"
-    content="cleaning gallery, before and after carpet, tile grout cleaning, upholstery results, floor cleaning gallery, Lakewood Ranch FL cleaning services, IV Clean gallery" />
-  <meta name="author" content="IV Clean - Magic Shine" />
+  <!-- Canonical -->
   <link rel="canonical" href="https://ivclean.netlify.app/gallery.html" />
 
-  <!-- Open Graph Meta Tags -->
+  <!-- Meta -->
+  <meta name="description"
+    content="Explore our before & after gallery of expert carpet, tile, grout, upholstery and floor cleaning services in Lakewood Ranch, FL." />
+  <!-- keywords su zastarjeli; uklonjeno -->
+  <meta name="author" content="IV Clean - Magic Shine" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="theme-color" content="#1e3c72" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="IV Clean - Magic Shine" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="https://ivclean.netlify.app/gallery.html" />
   <meta property="og:title" content="Gallery | IV Clean - Magic Shine" />
   <meta property="og:description"
-    content="See the real results of professional carpet, tile and upholstery cleaning by IV Clean in Lakewood Ranch, Florida." />
-  <meta property="og:image" content="https://ivclean.netlify.app/images/logoTransparent.png" />
-  <meta property="og:url" content="https://ivclean.netlify.app/gallery.html" />
-  <meta property="og:type" content="website" />
+    content="See real before & after results of carpet, tile & upholstery cleaning in Lakewood Ranch, Florida." />
+  <!-- Koristi cover umjesto logotipa -->
+  <meta property="og:image" content="https://ivclean.netlify.app/images/og-gallery.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Before & after cleaning results by IV Clean" />
 
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gallery | IV Clean - Magic Shine" />
+  <meta name="twitter:description"
+    content="Before & after results of professional deep cleaning across carpets, tile & grout, and upholstery." />
+  <meta name="twitter:image" content="https://ivclean.netlify.app/images/og-gallery.jpg" />
+  <meta name="twitter:image:alt" content="Before & after cleaning results by IV Clean" />
 
-  <!-- Schema for Local Business -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "IV Clean - Magic Shine",
-    "image": "https://ivclean.netlify.app/images/logoTransparent.png",
-    "url": "https://ivclean.netlify.app/",
-    "telephone": "+19412999475",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Lakewood Ranch",
-      "addressRegion": "FL",
-      "addressCountry": "US"
-    },
-    "description": "Professional carpet, tile, grout, upholstery and floor cleaning services in Lakewood Ranch, Florida. Eco-safe and family-friendly.",
-    "areaServed": "Lakewood Ranch, Sarasota, Bradenton, Florida"
-  }
-  </script>
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  <!-- <link rel="manifest" href="/site.webmanifest"> -->
 
-  <link rel="preload" as="image" href="/images/before-after-1.jpg">
-
-  <!-- Other Meta -->
-  <meta name="robots" content="index, follow">
+  <!-- Perf -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href="/images/before-after-1.jpg" fetchpriority="high" />
 
   <!-- Fonts & CSS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="style.css">
-  </noscript>
+
+  <!-- Zadrži JEDAN CSS include (trenutno si imao dupli) -->
+  <link rel="stylesheet" href="style.css?v=2025-09-01-1">
 
   <!-- Scripts -->
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <link rel="stylesheet" href="style.css?v=2025-09-01-1">
   <script defer src="script.js?v=2025-09-01-1"></script>
+
+  <!-- Structured Data: LocalBusiness (ok na svim stranicama) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"IV Clean - Magic Shine",
+    "image":"https://ivclean.netlify.app/images/og-gallery.jpg",
+    "url":"https://ivclean.netlify.app/",
+    "telephone":"+1-941-299-9475",
+    "address":{"@type":"PostalAddress","addressLocality":"Lakewood Ranch","addressRegion":"FL","addressCountry":"US"},
+    "areaServed":["Lakewood Ranch","Sarasota","Bradenton"],
+    "priceRange":"$$",
+    "sameAs":["https://wa.me/19412999475"]
+  }
+  </script>
+
+  <!-- Structured Data: ImageGallery (specifično za ovu stranicu) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ImageGallery",
+    "name":"IV Clean — Before & After Gallery",
+    "url":"https://ivclean.netlify.app/gallery.html",
+    "image":[
+      "https://ivclean.netlify.app/images/before-after-1.jpg",
+      "https://ivclean.netlify.app/images/before-after-2.jpg",
+      "https://ivclean.netlify.app/images/before-after-3.jpg"
+    ],
+    "isPartOf":{"@type":"WebSite","name":"IV Clean - Magic Shine","url":"https://ivclean.netlify.app/"}
+  }
+  </script>
 </head>
+
 
 <body>
   <!-- Navigation -->

@@ -1,92 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- ✅ SEO/Meta HEAD — nadogradnja (zamijeni tvoj <head> sadržaj ovim, a GA/Fontove ostavi gdje jesu) -->
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- Google Analytics -->
+  <!-- Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEW1LV0Z29"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-XEW1LV0Z29');
+    gtag('js', new Date()); gtag('config', 'G-XEW1LV0Z29');
   </script>
 
-  <!-- Google Site Verification -->
+  <!-- Verification -->
   <meta name="google-site-verification" content="StZQEmasaspUM5mF8exfZOoLY7KMmE7zwwnHTshiseg" />
 
-  <!-- Primary Meta Tags -->
+  <!-- Primary -->
   <title>IV Clean - Magic Shine | Carpet & Floor Cleaning in Lakewood Ranch</title>
-  <meta name="title" content="IV Clean - Magic Shine | Carpet & Floor Cleaning in Lakewood Ranch" />
   <meta name="description"
     content="Professional carpet, tile, upholstery, and floor cleaning in Lakewood Ranch, Sarasota & Bradenton. Eco-safe, pet-friendly, free estimates & 100% satisfaction guarantee." />
-  <meta name="keywords"
-    content="IV Clean, Lakewood Ranch cleaning services, carpet cleaning, tile and grout, upholstery cleaning, floor care, Sarasota deep cleaning, pet-safe steam cleaning, eco-friendly cleaning Florida, local cleaning company, professional cleaning near me, Bradenton carpet service" />
   <meta name="author" content="IV Clean - Magic Shine" />
+  <!-- ⛔ Preporuka: ukloniti meta keywords (zastarjelo) -->
 
-  <!-- Open Graph / Facebook -->
+  <!-- Canonical -->
+  <link rel="canonical" href="https://ivclean.netlify.app/" />
+
+  <!-- Robots -->
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="googlebot" content="index,follow" />
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="IV Clean - Magic Shine" />
+  <meta property="og:locale" content="en_US" />
   <meta property="og:url" content="https://ivclean.netlify.app/" />
   <meta property="og:title" content="IV Clean - Magic Shine | Carpet & Floor Cleaning in Lakewood Ranch" />
   <meta property="og:description"
     content="Eco-safe, pet-friendly cleaning services for carpets, tile, upholstery and more in Lakewood Ranch & Sarasota." />
-  <meta property="og:image" content="https://ivclean.netlify.app/images/logoTransparent.png" />
+  <!-- ✅ Preporuka: koristi hero/cover 1200×630 (ne logo) -->
+  <meta property="og:image" content="https://ivclean.netlify.app/images/og-cover.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="IV Clean – before & after cleaning results" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="IV Clean - Magic Shine | Carpet & Floor Cleaning in Lakewood Ranch" />
   <meta name="twitter:description"
     content="Professional eco-safe cleaning for carpets, tiles, and furniture in Florida. Get a free estimate!" />
-  <meta name="twitter:image" content="https://ivclean.netlify.app/images/logoTransparent.png" />
+  <meta name="twitter:image" content="https://ivclean.netlify.app/images/og-cover.jpg" />
+  <meta name="twitter:image:alt" content="IV Clean – before & after cleaning results" />
+  <!-- (Opcionalno) Postavi @ ako ga imaš -->
+  <!-- <meta name="twitter:site" content="@yourhandle" /> -->
 
-  <!-- Canonical Link -->
-  <link rel="canonical" href="https://ivclean.netlify.app/" />
+  <!-- PWA / Icons -->
+  <meta name="theme-color" content="#1e3c72" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  <!-- (Opcionalno) <link rel="manifest" href="/site.webmanifest"> -->
+
+  <!-- Sitemap (nije standard kao rel, ali ok za ljude/botove koji prate link) -->
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href="/images/hero-poster.jpg" fetchpriority="high" />
+  <!-- Ako hero video ima poster, ovo pomaže LCP -->
 
-  <!-- Styles and Scripts -->
+  <!-- CSS/JS -->
   <link rel="stylesheet" href="style.css?v=2025-09-01-1">
   <script defer src="script.js?v=2025-09-01-1"></script>
 
-  <!-- Fonts and Libraries -->
+  <!-- Fonts/UI libs -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <!-- CHANGE: dodat preconnect za fonts.gstatic radi bržeg font fetch-a -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <!-- /CHANGE -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
-  <!-- Local Business Schema -->
+  <!-- Structured Data: LocalBusiness -->
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "IV Clean - Magic Shine",
-      "image": "https://ivclean.netlify.app/images/logoTransparent.png",
-      "url": "https://ivclean.netlify.app",
-      "telephone": "+19412999475",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Lakewood Ranch",
-        "addressRegion": "FL",
-        "postalCode": "34211",
-        "addressCountry": "US"
-      },
-      "description": "Eco-friendly carpet, tile, floor, and upholstery cleaning services in Lakewood Ranch, FL. Free estimates and satisfaction guaranteed.",
-      "priceRange": "$$",
-      "areaServed": {
-        "@type": "Place",
-        "name": "Lakewood Ranch, Sarasota, Bradenton"
-      }
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"IV Clean - Magic Shine",
+    "image":"https://ivclean.netlify.app/images/og-cover.jpg",
+    "url":"https://ivclean.netlify.app/",
+    "telephone":"+1-941-299-9475",
+    "email":"ivcleanmagicshine@gmail.com",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Lakewood Ranch",
+      "addressRegion":"FL",
+      "postalCode":"34211",
+      "addressCountry":"US"
+    },
+    "areaServed":["Lakewood Ranch","Sarasota","Bradenton"],
+    "priceRange":"$$",
+    "description":"Eco-friendly carpet, tile, grout, upholstery and floor cleaning.",
+    "openingHoursSpecification":[
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"18:00"}
+    ],
+    "geo":{"@type":"GeoCoordinates","latitude":27.403,"longitude":-82.401},
+    "hasMap":"https://www.google.com/maps?q=Lakewood+Ranch,+FL",
+    "sameAs":["https://wa.me/19412999475"]
+  }
+  </script>
+
+  <!-- Structured Data: WebSite + SearchAction (opcionalno, ako dodaš site search) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://ivclean.netlify.app/",
+    "name": "IV Clean - Magic Shine",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://ivclean.netlify.app/search?q={query}",
+      "query-input": "required name=query"
     }
+  }
   </script>
 </head>
+
 
 <body>
   <!-- Navigation Bar -->
