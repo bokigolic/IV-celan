@@ -1,0 +1,9 @@
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+  Cache-Control = "max-age=0, must-revalidate, public"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+  Cache-Control = "max-age=0, must-revalidate, public"
